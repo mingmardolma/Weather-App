@@ -30,7 +30,7 @@ def search():
         temp_lbl['text'] = '{}°K, {}°C, {}°F'.format(weather[2], weather[3], weather[4])
         
     else:
-        messagebox.showerror("Error", "City not found {}".format(city))
+        messagebox.showerror("Error", "{} city not found".format(city))
 
 #APP
 app = Tk()
