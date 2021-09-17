@@ -27,7 +27,7 @@ def search():
     if weather:
         location_lbl['text'] = '{}, {}'.format(weather[0], weather[1])
         curr_weather_lbl['text'] = weather[5]
-        temp_lbl['text'] = '{}°K, {}°C, {}°F'.format(weather[3], weather[3], weather[4])
+        temp_lbl['text'] = '{}°K, {}°C, {}°F'.format(weather[2], weather[3], weather[4])
         
     else:
         messagebox.showerror("Error", "City not found {}".format(city))
